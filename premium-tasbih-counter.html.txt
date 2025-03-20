@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Islamic Tasbih Counter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1a1f35 0%, #121624 100%);
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .counter-container {
+            position: relative;
+            width: 350px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            color: white;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .counter-container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 380px;
+            height: 380px;
+            background: radial-gradient(circle, rgba(67, 206, 162, 0.3) 0%, rgba(24, 90, 157, 0.1) 100%);
+            border-radius: 50%;
+            z-index: -1;
+        }
+        
+        .counter-container::after {
+            content: '';
+            position: absolute;
+            bottom: -50%;
+            right: -50%;
+            width: 380px;
+            height: 380px;
+            background: radial-gradient(circle, rgba(67, 206, 162, 0.3) 0%, rgba(24, 90, 157, 0.1) 100%);
+            border-radius: 50%;
+            z-index: -1;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 24px;
+            font-weight: 500;
+            color: #fff;
+            margin-bottom: 8px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+        }
+        
+        .counter-display {
+            position: relative;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+        }
+        
+        .counter-display::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+            z-index: 0;
+        }
+        
+        #tasbih-text {
+            font-size: 28px;
+            font-weight: 600;
+            color: #43cea2;
+            margin-bottom: 10px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        
+        #counter {
+            font-size: 60px;
+            font-weight: 700;
+            color: #fff;
+            margin: 5px 0;
+            text-align: center;
+            text-shadow: 0 2px 15px rgba(67, 206, 162, 0.5);
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+            margin: 15px 0;
+            overflow: hidden;
+        }
+        
+        #progress {
+            height: 100%;
+            background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+        
+        .counter-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        button {
+            background: transparent;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+            border-radius: 50px;
+            z-index: -1;
+            transition: 0.3s ease;
+        }
+        
+        button:hover::before {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+        
+        #reset::before {
+            background: linear-gradient(135deg, #ff5e62 0%, #ff9966 100%);
+        }
+        
+        button i {
+            font-size: 18px;
+        }
+        
+        .tasbih-groups {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        
+        .tasbih-group {
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            flex: 1;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .tasbih-group:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .tasbih-group.active {
+            background: rgba(67, 206, 162, 0.2);
+            border-color: rgba(67, 206, 162, 0.5);
+        }
+        
+        .tasbih-group h3 {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        
+        .tasbih-group p {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .vibrate {
+            animation: vibrate 0.3s linear;
+        }
+        
+        @keyframes vibrate {
+            0% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+            100% { transform: translate(0); }
+        }
+        
+        .success-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.5s ease;
+        }
+        
+        .success-animation.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        .success-content {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            max-width: 300px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .success-icon {
+            font-size: 50px;
+            color: #43cea2;
+            margin-bottom: 15px;
+        }
+        
+        .dark-mode-toggle {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: transparent;
+            border: none;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            padding: 5px;
+        }
+        
+        .dark-mode-toggle:hover {
+            color: #fff;
+        }
+        
+        .light-mode {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .light-mode .counter-container {
+            background: rgba(255, 255, 255, 0.2);
+            color: #333;
+        }
+        
+        .light-mode h1, .light-mode #counter {
+            color: #333;
+            text-shadow: none;
+        }
+        
+        .light-mode #tasbih-text {
+            color: #185a9d;
+        }
+        
+        .light-mode .counter-display {
+            background: rgba(255, 255, 255, 0.5);
+        }
+        
+        .light-mode .tasbih-group {
+            background: rgba(0, 0, 0, 0.05);
+        }
+        
+        .light-mode .tasbih-group.active {
+            background: rgba(67, 206, 162, 0.2);
+        }
+        
+        .light-mode .tasbih-group p, .light-mode .counter-info {
+            color: rgba(0, 0, 0, 0.6);
+        }
+        
+        .sound-toggle {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: transparent;
+            border: none;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            padding: 5px;
+        }
+        
+        .sound-toggle:hover {
+            color: #fff;
+        }
+        
+        .key-controls {
+            margin-top: 10px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.5);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="counter-container">
+        <button id="dark-mode-toggle" class="dark-mode-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+        <button id="sound-toggle" class="sound-toggle">
+            <i class="fas fa-volume-up"></i>
+        </button>
+        
+        <div class="title">
+            <h1>ডিজিটাল তাসবিহ কাউন্টার</h1>
+            <p class="subtitle">মহান আল্লাহর জিকির করুন</p>
+        </div>
+        
+        <div class="tasbih-groups">
+            <div class="tasbih-group active" data-group="0">
+                <h3>সুবহানআল্লাহ</h3>
+                <p>33 বার</p>
+            </div>
+            <div class="tasbih-group" data-group="1">
+                <h3>আলহামদুলিল্লাহ</h3>
+                <p>33 বার</p>
+            </div>
+            <div class="tasbih-group" data-group="2">
+                <h3>আল্লাহু আকবার</h3>
+                <p>33 বার</p>
+            </div>
+        </div>
+        
+        <div class="counter-display">
+            <h2 id="tasbih-text">সুবহানআল্লাহ</h2>
+            <h1 id="counter">0</h1>
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+            <div class="counter-info">
+                <span id="current-group">১ম ৩৩</span>
+                <span id="total-count">০/৯৯</span>
+            </div>
+        </div>
+        
+        <div class="btn-container">
+            <button id="increment">
+                <i class="fas fa-plus"></i> তাসবিহ
+            </button>
+            <button id="reset">
+                <i class="fas fa-redo"></i> রিসেট
+            </button>
+        </div>
+        
+        <div class="key-controls">
+            <p>স্পেসবার অথবা এন্টার চাপুন তাসবিহ করার জন্য</p>
+        </div>
+    </div>
+    
+    <div class="success-animation" id="success-animation">
+        <div class="success-content">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>মাশাআল্লাহ!</h2>
+            <p>আপনার ৯৯ বার তাসবিহ সম্পন্ন হয়েছে!</p>
+            <button id="continue-btn">
+                <i class="fas fa-arrow-right"></i> চালিয়ে যান
+            </button>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let count = 0;
+            let totalCount = 0;
+            const counter = document.getElementById("counter");
+            const tasbihText = document.getElementById("tasbih-text");
+            const increment = document.getElementById("increment");
+            const reset = document.getElementById("reset");
+            const progress = document.getElementById("progress");
+            const currentGroup = document.getElementById("current-group");
+            const totalCountEl = document.getElementById("total-count");
+            const successAnimation = document.getElementById("success-animation");
+            const continueBtn = document.getElementById("continue-btn");
+            const darkModeToggle = document.getElementById("dark-mode-toggle");
+            const soundToggle = document.getElementById("sound-toggle");
+            const tasbihGroups = document.querySelectorAll(".tasbih-group");
+            
+            const tasbihs = ["সুবহানআল্লাহ", "আলহামদুলিল্লাহ", "আল্লাহু আকবার"];
+            const groupMaxes = [33, 33, 33];
+            let currentTasbih = 0;
+            let soundEnabled = true;
+            
+            // Click sound
+            const clickSound = new Audio();
+            clickSound.src = "data:audio/mp3;base64,SUQzAwAAAAAAIlRJVDIAAAAWAAAARGlnaXRhbCBUYXNiaWggQXVkaW8AAAAAAA==";
+            
+            // Completion sound
+            const completionSound = new Audio();
+            completionSound.src = "data:audio/mp3;base64,SUQzAwAAAAAAIlRJVDIAAAAWAAAARGlnaXRhbCBUYXNiaWggQXVkaW8AAAAAAA==";
+            
+            // Increment function
+            function incrementCounter() {
+                if (count < groupMaxes[currentTasbih]) {
+                    count++;
+                    totalCount++;
+                    counter.textContent = count;
+                    totalCountEl.textContent = totalCount + "/৯৯";
+                    
+                    // Update progress
+                    const progressWidth = (count / groupMaxes[currentTasbih]) * 100;
+                    progress.style.width = progressWidth + "%";
+                    
+                    // Add vibration effect
+                    counter.classList.add("vibrate");
+                    setTimeout(() => {
+                        counter.classList.remove("vibrate");
+                    }, 300);
+                    
+                    // Play sound if enabled
+                    if (soundEnabled) {
+                        clickSound.play();
+                    }
+                    
+                    // Check if current group is complete
+                    if (count === groupMaxes[currentTasbih]) {
+                        // Move to next group
+                        currentTasbih = (currentTasbih + 1) % 3;
+                        
+                        // Check if all complete
+                        if (totalCount === 99) {
+                            if (soundEnabled) {
+                                completionSound.play();
+                            }
+                            successAnimation.classList.add("active");
+                        } else {
+                            // Reset count for next group
+                            setTimeout(() => {
+                                count = 0;
+                                counter.textContent = count;
+                                tasbihText.textContent = tasbihs[currentTasbih];
+                                currentGroup.textContent = (currentTasbih + 1) + "ম ৩৩";
+                                progress.style.width = "0%";
+                                
+                                // Update active group
+                                tasbihGroups.forEach((group, index) => {
+                                    if (index === currentTasbih) {
+                                        group.classList.add("active");
+                                    } else {
+                                        group.classList.remove("active");
+                                    }
+                                });
+                            }, 500);
+                        }
+                    }
+                }
+            }
+            
+            // Reset function
+            function resetCounter() {
+                count = 0;
+                totalCount = 0;
+                currentTasbih = 0;
+                counter.textContent = count;
+                totalCountEl.textContent = totalCount + "/৯৯";
+                tasbihText.textContent = tasbihs[0];
+                currentGroup.textContent = "১ম ৩৩";
+                progress.style.width = "0%";
+                
+                // Reset active group
+                tasbihGroups.forEach((group, index) => {
+                    if (index === 0) {
+                        group.classList.add("active");
+                    } else {
+                        group.classList.remove("active");
+                    }
+                });
+            }
+            
+            // Event listeners
+            increment.addEventListener("click", incrementCounter);
+            
+            reset.addEventListener("click", resetCounter);
+            
+            continueBtn.addEventListener("click", function() {
+                successAnimation.classList.remove("active");
+                resetCounter();
+            });
+            
+            // Keyboard shortcuts
+            document.addEventListener("keydown", function(e) {
+                if (e.key === " " || e.key === "Enter") {
+                    e.preventDefault();
+                    incrementCounter();
+                } else if (e.key === "r" || e.key === "R") {
+                    resetCounter();
+                }
+            });
+            
+            // Dark mode toggle
+            darkModeToggle.addEventListener("click", function() {
+                document.body.classList.toggle("light-mode");
+                if (document.body.classList.contains("light-mode")) {
+                    darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+                } else {
+                    darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+                }
+            });
+            
+            // Sound toggle
+            soundToggle.addEventListener("click", function() {
+                soundEnabled = !soundEnabled;
+                if (soundEnabled) {
+                    soundToggle.innerHTML = '<i class="fas fa-volume-up"></i>';
+                } else {
+                    soundToggle.innerHTML = '<i class="fas fa-volume-mute"></i>';
+                }
+            });
+            
+            // Tasbih group selection
+            tasbihGroups.forEach((group, index) => {
+                group.addEventListener("click", function() {
+                    currentTasbih = index;
+                    tasbihText.textContent = tasbihs[currentTasbih];
+                    currentGroup.textContent = (currentTasbih + 1) + "ম ৩৩";
+                    
+                    // Reset count for new group
+                    count = 0;
+                    counter.textContent = count;
+                    progress.style.width = "0%";
+                    
+                    // Update active class
+                    tasbihGroups.forEach((g, i) => {
+                        if (i === index) {
+                            g.classList.add("active");
+                        } else {
+                            g.classList.remove("active");
+                        }
+                    });
+                });
+            });
+            
+            // Initialize display
+            currentGroup.textContent = "১ম ৩৩";
+            totalCountEl.textContent = "০/৯৯";
+        });
+    </script>
+</body>
+</html>
