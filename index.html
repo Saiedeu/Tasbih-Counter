@@ -1003,7 +1003,6 @@
             // State variables
             let count = 0;
             let totalCount = 0;
-            let isAnimating = false;
             
             // DOM elements
             const counter = document.getElementById("counter");
@@ -1108,9 +1107,8 @@
             
             // Enhanced increment function with better UX
             function incrementCounter() {
-                if (isAnimating || count >= groupMaxes[currentTasbih]) return;
+                if (totalCount >= 99) return;
                 
-                isAnimating = true;
                 count++;
                 totalCount++;
                 
@@ -1124,10 +1122,7 @@
                     counter.classList.add('vibrate');
                     setTimeout(() => {
                         counter.classList.remove('vibrate');
-                        isAnimating = false;
                     }, 400);
-                } else {
-                    isAnimating = false;
                 }
                 
                 // Play sound
@@ -1145,15 +1140,16 @@
                     });
                 }
                 
-                // Check if group is completed
-                if (count >= groupMaxes[currentTasbih]) {
-                    setTimeout(() => {
-                        if (currentTasbih < 2) {
-                            currentTasbih++;
-                            count = 0;
-                            switchTasbihGroup(currentTasbih);
-                        }
-                    }, 600);
+                // Check if group is completed - switch immediately
+                if (count >= groupMaxes[currentTasbih] && currentTasbih < 2) {
+                    currentTasbih++;
+                    count = 0;
+                    tasbihText.textContent = tasbihs[currentTasbih];
+                    updateCounter();
+                    tasbihGroups.forEach((group, index) => {
+                        group.classList.toggle('active', index === currentTasbih);
+                        group.setAttribute('aria-pressed', index === currentTasbih);
+                    });
                 }
                 
                 // Check if all tasbihs are completed
@@ -1176,7 +1172,6 @@
                 count = 0;
                 totalCount = 0;
                 currentTasbih = 0;
-                isAnimating = false;
                 
                 updateCounter();
                 switchTasbihGroup(0);
@@ -1191,7 +1186,7 @@
             
             // Enhanced group switching
             function switchTasbihGroup(groupIndex) {
-                if (groupIndex < 0 || groupIndex > 2 || isAnimating) return;
+                if (groupIndex < 0 || groupIndex > 2) return;
                 
                 currentTasbih = groupIndex;
                 count = 0;
@@ -1509,7 +1504,6 @@
             document.addEventListener('visibilitychange', function() {
                 if (document.hidden) {
                     // Pause animations or heavy operations
-                    isAnimating = false;
                 } else {
                     // Resume normal operation
                     updateCounter();
@@ -1519,4 +1513,3 @@
     </script>
 </body>
 </html>
-
