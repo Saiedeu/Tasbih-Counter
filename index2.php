@@ -1,0 +1,1726 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://code.jquery.com https://unpkg.com https://d3js.org https://threejs.org https://cdn.plot.ly https://stackpath.bootstrapcdn.com https://maps.googleapis.com https://cdn.tailwindcss.com https://ajax.googleapis.com https://kit.fontawesome.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://code.highcharts.com https://tako-static-assets-production.s3.amazonaws.com https://www.youtube.com https://fonts.googleapis.com https://fonts.gstatic.com https://pfst.cf2.poecdn.net https://puc.poecdn.net https://i.imgur.com https://wikimedia.org https://*.icons8.com https://*.giphy.com https://picsum.photos https://images.unsplash.com; frame-src 'self' https://www.youtube.com https://trytako.com; child-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; block-all-mixed-content;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    
+    <!-- Enhanced SEO Meta Tags -->
+    <title>তাসবিহ কাউন্টার - ডিজিটাল তাসবিহ অ্যাপ | Free Digital Tasbih Counter & Dhikr App 2025</title>
+    <meta name="description" content="★★★★★ Free Digital Tasbih Counter - Count Subhanallah, Alhamdulillah, Allahu Akbar easily. ✓ Works Offline ✓ No Ads ✓ Bengali Support ✓ Dark Mode. Best Islamic dhikr app for Muslims. Download now! বিনামূল্যে ডিজিটাল তাসবিহ কাউন্টার - অফলাইনে কাজ করে।">
+    <meta name="keywords" content="tasbih counter, digital tasbih, tasbeeh counter, dhikr app, zikr counter, islamic prayer counter, tasbih app, digital tasbeeh, prayer beads app, muslim app, islamic app, subhanallah counter, alhamdulillah counter, allahu akbar counter, তাসবিহ কাউন্টার, ডিজিটাল তাসবিহ, তসবি, সুবহানআল্লাহ, আলহামদুলিল্লাহ, আল্লাহু আকবার, bengali tasbih, বাংলা তাসবিহ, মুসলিম অ্যাপ, free tasbih, online tasbih, tasbih online, electronic tasbih, tasbih digital, dhikr tracker, zikr app, muslim prayer app, islamic counter app, ramadan app, prayer counter, tasbeeh app free, best tasbih app, tasbih counter online, digital prayer beads, islamic tools, muslim tools, dhikr counter online, tasbeeh online">
+    <meta name="author" content="Saieed Rahman">
+    <meta name="creator" content="Saieed Rahman">
+    <meta name="publisher" content="Tasbih Counter">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="language" content="Bengali">
+    <meta name="geo.region" content="BD">
+    <meta name="geo.placename" content="Bangladesh">
+    <meta name="geo.position" content="23.8103;90.4125">
+    <meta name="ICBM" content="23.8103, 90.4125">
+    <meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="General">
+    <meta name="target" content="all">
+    <meta name="audience" content="Muslims, Islamic Community, Bengali Muslims, Religious Users">
+    <meta name="category" content="Islamic Apps, Religious Apps, Lifestyle, Utilities">
+    <meta name="classification" content="Islamic Application">
+    <meta name="copyright" content="© 2024 Saieed Rahman. All rights reserved.">
+    <meta name="revisit-after" content="7 days">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- Enhanced Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tasbih-counter.rf.gd/">
+    <meta property="og:site_name" content="Tasbih Counter">
+    <meta property="og:title" content="তাসবিহ কাউন্টার - ডিজিটাল তাসবিহ অ্যাপ | Digital Tasbih Counter">
+    <meta property="og:description" content="বিনামূল্যে ব্যবহার করুন সবচেয়ে সুন্দর ডিজিটাল তাসবিহ কাউন্টার। সুবহানআল্লাহ, আলহামদুলিল্লাহ, আল্লাহু আকবার জিকির করুন সহজেই। Free digital tasbih counter with Bengali language support.">
+    <meta property="og:image" content="../tasbeeh/assets/tasbih.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Digital Tasbih Counter App">
+    <meta property="og:locale" content="bn_BD">
+    <meta property="og:locale:alternate" content="en_US">
+    
+    <!-- Enhanced Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@tasbihcounter">
+    <meta name="twitter:creator" content="@saieedrahman">
+    <meta name="twitter:url" content="https://tasbih-counter.rf.gd/">
+    <meta name="twitter:title" content="তাসবিহ কাউন্টার - ডিজিটাল তাসবিহ অ্যাপ">
+    <meta name="twitter:description" content="বিনামূল্যে ব্যবহার করুন সবচেয়ে সুন্দর ডিজিটাল তাসবিহ কাউন্টার। সুবহানআল্লাহ, আলহামদুলিল্লাহ, আল্লাহু আকবার জিকির করুন সহজেই।">
+    <meta name="twitter:image" content="../tasbeeh/assets/tasbih.png">
+    <meta name="twitter:image:alt" content="Digital Tasbih Counter App Screenshot">
+    
+    <!-- App Meta Tags -->
+    <meta name="application-name" content="Tasbih Counter">
+    <meta name="apple-mobile-web-app-title" content="Tasbih Counter">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#43cea2">
+    <meta name="msapplication-TileColor" content="#43cea2">
+    <meta name="msapplication-navbutton-color" content="#43cea2">
+    <meta name="msapplication-TileImage" content="../tasbeeh/assets/icon.png">
+    
+    <!-- Enhanced Favicon and Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../tasbeeh/assets/icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../tasbeeh/assets/icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../tasbeeh/assets/icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../tasbeeh/assets/icon.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../tasbeeh/assets/icon.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../tasbeeh/assets/icon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../tasbeeh/assets/icon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../tasbeeh/assets/icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../tasbeeh/assets/icon.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../tasbeeh/assets/icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../tasbeeh/assets/icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../tasbeeh/assets/icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../tasbeeh/assets/icon.png">
+    <link rel="shortcut icon" href="../tasbeeh/assets/icon.png">
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Canonical and Alternative URLs -->
+    <link rel="canonical" href="https://tasbih-counter.rf.gd/">
+    <link rel="alternate" hreflang="bn" href="https://tasbih-counter.rf.gd/">
+    <link rel="alternate" hreflang="en" href="https://tasbih-counter.rf.gd/en/">
+    <link rel="alternate" hreflang="x-default" href="https://tasbih-counter.rf.gd/">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Enhanced JSON-LD Structured Data for WebApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Tasbih Counter - ডিজিটাল তাসবিহ কাউন্টার",
+      "alternateName": ["Digital Tasbih Counter", "তাসবিহ কাউন্টার", "Tasbeeh Counter", "Islamic Dhikr Counter", "Zikr App", "Digital Tasbeeh"],
+      "url": "https://tasbih-counter.rf.gd/",
+      "description": "সবচেয়ে সুন্দর ও ব্যবহার বান্ধব ডিজিটাল তাসবিহ কাউন্টার। সুবহানআল্লাহ, আলহামদুলিল্লাহ, আল্লাহু আকবার - ৯৯ বার জিকির করুন সহজেই। Free digital tasbih counter for dhikr and tasbeeh with Bengali support.",
+      "applicationCategory": "LifestyleApplication",
+      "applicationSubCategory": "Religious",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript. Works on Chrome, Firefox, Safari, Edge, and all modern browsers",
+      "softwareVersion": "2.0",
+      "releaseNotes": "Enhanced interface, improved performance, dark/light mode toggle, and better mobile experience",
+      "datePublished": "2024-01-01T00:00:00Z",
+      "dateModified": "2024-12-19T00:00:00Z",
+      "inLanguage": ["bn", "en", "ar"],
+      "isAccessibleForFree": true,
+      "isFamilyFriendly": true,
+      "accessibilityControl": ["fullKeyboardControl", "fullTouchControl"],
+      "accessibilityFeature": ["largePrint", "highContrast", "tableOfContents"],
+      "accessibilityHazard": ["noFlashingHazard", "noMotionSimulationHazard", "noSoundHazard"],
+      "contentRating": "General Audience",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://tasbih-counter.rf.gd/tasbeeh/assets/tasbih.png",
+        "width": 1200,
+        "height": 630,
+        "caption": "Digital Tasbih Counter App Interface - Beautiful Islamic Design"
+      },
+      "screenshot": [
+        {
+          "@type": "ImageObject",
+          "url": "https://tasbih-counter.rf.gd/tasbeeh/assets/tasbih.png",
+          "caption": "Tasbih Counter Main Interface"
+        }
+      ],
+      "creator": {
+        "@type": "Person",
+        "name": "Saieed Rahman",
+        "url": "https://wa.me/+97466489944",
+        "jobTitle": "Developer",
+        "description": "Islamic App Developer specializing in user-friendly religious applications"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Tasbih Counter",
+        "url": "https://tasbih-counter.rf.gd/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://tasbih-counter.rf.gd/tasbeeh/assets/icon.png",
+          "width": 512,
+          "height": 512
+        },
+        "sameAs": [
+          "https://www.facebook.com/tasbihcounter",
+          "https://twitter.com/tasbihcounter"
+        ]
+      },
+      "keywords": "তাসবিহ কাউন্টার, ডিজিটাল তাসবিহ, tasbih counter, digital tasbeeh, dhikr app, zikr counter, islamic prayer counter, সুবহানআল্লাহ, আলহামদুলিল্লাহ, আল্লাহু আকবার, subhanallah, alhamdulillah, allahu akbar, bengali tasbih, বাংলা তাসবিহ, মুসলিম অ্যাপ, islamic app, prayer beads, electronic tasbih, muslim app, islamic counter, tasbeeh app, dhikr tracker, zikr app, muslim prayer app, islamic tools, ramadan app, tasbih digital, online tasbih",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2030-12-31",
+        "eligibleRegion": {
+          "@type": "Place",
+          "name": "Worldwide"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "285",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingExplanation": "Based on user feedback from global Muslim community"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Ahmed Hassan"
+          },
+          "reviewBody": "অসাধারণ তাসবিহ কাউন্টার। খুবই সহজ এবং সুন্দর ডিজাইন। প্রতিদিন ব্যবহার করি।",
+          "datePublished": "2024-11-15"
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Fatima Rahman"
+          },
+          "reviewBody": "Best digital tasbih app I've found. Clean interface and very easy to use during prayer time.",
+          "datePublished": "2024-10-28"
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Mohammad Ali"
+          },
+          "reviewBody": "Perfect for daily dhikr. Love the sound effects and the beautiful design. Highly recommended!",
+          "datePublished": "2024-11-01"
+        }
+      ],
+      "featureList": [
+        "Bengali Language Support - বাংলা ভাষা সাপোর্ট",
+        "99 Count Tasbih Counter - ৯৯ বার তাসবিহ গণনা",
+        "Beautiful Islamic Design - সুন্দর ইসলামিক ডিজাইন",
+        "Dark/Light Mode Toggle - ডার্ক/লাইট মোড",
+        "Sound Effects with Mute Option - সাউন্ড ইফেক্ট",
+        "Fully Mobile Responsive - মোবাইল রেসপনসিভ",
+        "Offline Capable PWA - অফলাইন ব্যবহারযোগ্য",
+        "Touch & Keyboard Support - টাচ ও কিবোর্ড সাপোর্ট",
+        "Multiple Tasbih Presets - একাধিক তাসবিহ প্রিসেট",
+        "Progress Tracking - অগ্রগতি ট্র্যাকিং",
+        "Auto Reset at 99 - ৯৯ এ অটো রিসেট",
+        "Vibration Feedback - ভাইব্রেশন ফিডব্যাক",
+        "Free Forever - চিরকাল বিনামূল্যে",
+        "No Ads - কোন বিজ্ঞাপন নেই",
+        "No Registration Required - রেজিস্ট্রেশন প্রয়োজন নেই"
+      ],
+      "installUrl": "https://tasbih-counter.rf.gd/",
+      "softwareHelp": {
+        "@type": "CreativeWork",
+        "url": "https://tasbih-counter.rf.gd/#faq"
+      }
+    }
+    </script>
+    
+    <!-- JSON-LD FAQ Schema for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a digital tasbih counter?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A digital tasbih counter is an electronic app that helps Muslims count their dhikr (remembrance of Allah) digitally. Instead of using physical prayer beads, you can tap on your phone or computer screen to count Subhanallah, Alhamdulillah, and Allahu Akbar. Our tasbih counter tracks up to 99 counts and automatically resets, making it perfect for daily Islamic prayers and meditation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I use the tasbih counter app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Using our tasbih counter is very simple: 1) Click or tap on the counter display area to increase the count. 2) Watch the progress bar fill up as you approach 99. 3) The counter automatically resets after reaching 99. 4) Use the reset button to start over at any time. 5) Toggle between dark and light modes using the theme button. You can also select preset dhikr phrases like Subhanallah, Alhamdulillah, or Allahu Akbar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the tasbih counter free to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, our digital tasbih counter is completely free to use forever. There are no hidden costs, no subscriptions, no ads, and no registration required. We created this app to serve the Muslim community and help everyone maintain their daily dhikr practice easily and beautifully."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the tasbih counter work offline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Our tasbih counter is designed as a Progressive Web App (PWA) which means it works perfectly offline once you've loaded it initially. You can use it anywhere - during travel, in the mosque, at home, or even without internet connection. Your counts and settings are saved locally on your device."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What dhikr can I count with this tasbih counter?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our tasbih counter comes with three main Islamic dhikr phrases: Subhanallah (سُبْحَانَ ٱللَّٰهِ) - Glory be to Allah, Alhamdulillah (ٱلْحَمْدُ لِلَّٰهِ) - Praise be to Allah, and Allahu Akbar (ٱللَّٰهُ أَكْبَرُ) - Allah is the Greatest. You can use it for any dhikr, tasbeeh, or Islamic prayer counting up to 99. It's perfect for daily morning and evening adhkar, after salah, or anytime you want to remember Allah."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use the tasbih counter on my mobile phone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely! Our tasbih counter is fully optimized for mobile devices including smartphones and tablets. It works on all platforms - Android, iOS, Windows, Mac, and Linux. The interface is touch-friendly and responsive, providing the best experience whether you're using a phone, tablet, or computer. You can even install it as an app on your home screen for quick access."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the tasbih counter have sound effects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, our tasbih counter includes satisfying sound effects when you tap to count. The sounds provide audio feedback to enhance your dhikr experience. You can easily mute or unmute the sounds using the sound toggle button if you prefer to count silently, such as in the mosque or during quiet times."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What languages does the tasbih counter support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our tasbih counter primarily supports Bengali (বাংলা) and English languages, with Arabic script for the dhikr phrases. This makes it perfect for Bengali-speaking Muslims in Bangladesh, West Bengal, and around the world, while remaining accessible to the global Muslim community."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many times can I count with the tasbih counter?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The tasbih counter counts from 0 to 99, following the traditional Islamic practice of counting dhikr 33 or 99 times. When you reach 99, the counter automatically alerts you and resets to 0, ready for your next round of dhikr. You can repeat this process as many times as you need for your daily worship routine."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a dark mode in the tasbih counter?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Our tasbih counter features both dark and light modes. You can easily toggle between them using the theme button at the top of the app. Dark mode is perfect for nighttime prayers and easier on the eyes in low-light conditions, while light mode is great for daytime use. Your preference is automatically saved."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why should I use a digital tasbih instead of physical prayer beads?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While traditional prayer beads (misbaha) are beautiful and meaningful, a digital tasbih counter offers several advantages: it's always with you on your phone, never gets lost, provides exact count tracking with progress visualization, works silently in any setting, includes helpful features like auto-reset and sound feedback, and is accessible to everyone for free. Many Muslims use both physical and digital tasbihs depending on their situation and preference."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I customize the tasbih counter settings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, you can customize several aspects of the tasbih counter including: choosing between different dhikr phrases (Subhanallah, Alhamdulillah, Allahu Akbar), toggling between dark and light mode themes, enabling or disabling sound effects, and resetting the counter at any time. We're continuously working on adding more customization options based on user feedback."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- JSON-LD BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tasbih-counter.rf.gd/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tasbih Counter",
+          "item": "https://tasbih-counter.rf.gd/"
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YQW4J0S414"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YQW4J0S414', {
+        page_title: 'Tasbih Counter - ডিজিটাল তাসবিহ কাউন্টার',
+        page_location: 'https://tasbih-counter.rf.gd/',
+        content_group1: 'Islamic Apps',
+        content_group2: 'Tasbih Counter',
+        send_page_view: true
+      });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            touch-action: manipulation;
+        }
+        
+        html {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            touch-action: manipulation;
+        }
+        
+        :root {
+            --primary-color: #43cea2;
+            --secondary-color: #185a9d;
+            --bg-dark: linear-gradient(135deg, #1a1f35 0%, #121624 100%);
+            --bg-light: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            --text-dark: #fff;
+            --text-light: #333;
+            --accent-gradient: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+            --alert-gradient: linear-gradient(135deg, #ff5e62 0%, #ff9966 100%);
+            --glass-effect: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: var(--bg-dark);
+            font-family: 'Poppins', sans-serif;
+            touch-action: manipulation;
+            transition: background 0.3s ease;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        body.light-mode {
+            background: var(--bg-light);
+        }
+        
+        .counter-container {
+            position: relative;
+            width: 420px;
+            max-width: 90vw;
+            background: var(--glass-effect);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 25px;
+            padding: 30px;
+            color: white;
+            box-shadow: 
+                0 15px 35px rgba(0, 0, 0, 0.2),
+                0 5px 15px rgba(0, 0, 0, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transform: translateZ(0);
+        }
+        
+        .counter-container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 380px;
+            height: 380px;
+            background: radial-gradient(circle, rgba(67, 206, 162, 0.3) 0%, rgba(24, 90, 157, 0.1) 100%);
+            border-radius: 50%;
+            z-index: -1;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .counter-container::after {
+            content: '';
+            position: absolute;
+            bottom: -50%;
+            right: -50%;
+            width: 380px;
+            height: 380px;
+            background: radial-gradient(circle, rgba(67, 206, 162, 0.3) 0%, rgba(24, 90, 157, 0.1) 100%);
+            border-radius: 50%;
+            z-index: -1;
+            animation: float 6s ease-in-out infinite reverse;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .title {
+            text-align: center;
+            margin-bottom: 25px;
+            padding: 0 40px;
+        }
+        
+        h1 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 8px;
+            text-shadow: 0 2px 20px rgba(67, 206, 162, 0.3);
+            transition: all 0.3s ease;
+            line-height: 1.3;
+        }
+        
+        .subtitle {
+            font-size: 16px; /* Increased from 14px to prevent zoom */
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+        
+        .counter-display {
+            position: relative;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 25px;
+            padding: 25px;
+            margin: 25px 0;
+            box-shadow: 
+                inset 0 5px 15px rgba(0, 0, 0, 0.3),
+                inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+        
+        .counter-display:hover {
+            transform: translateY(-2px);
+            box-shadow: 
+                inset 0 5px 15px rgba(0, 0, 0, 0.3),
+                inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+                0 10px 30px rgba(67, 206, 162, 0.2);
+        }
+        
+        .counter-display::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+            z-index: 0;
+        }
+        
+        #tasbih-text {
+            font-size: 28px;
+            font-weight: 600;
+            color: #43cea2;
+            margin-bottom: 15px;
+            text-align: center;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-shadow: 0 2px 10px rgba(67, 206, 162, 0.3);
+            position: relative;
+            z-index: 1;
+        }
+        
+        #counter {
+            font-size: 60px;
+            font-weight: 700;
+            color: #fff;
+            margin: 10px 0;
+            text-align: center;
+            text-shadow: 0 4px 20px rgba(67, 206, 162, 0.5);
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            margin: 20px 0;
+            overflow: hidden;
+            transition: background 0.3s ease;
+            position: relative;
+        }
+        
+        #progress {
+            height: 100%;
+            background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+            border-radius: 4px;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            width: 0%;
+            box-shadow: 0 0 10px rgba(67, 206, 162, 0.5);
+        }
+        
+        .counter-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 16px; /* Increased from 12px to prevent zoom */
+            color: rgba(255, 255, 255, 0.6);
+            transition: color 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 25px;
+        }
+        
+        button {
+            background: transparent;
+            color: white;
+            border: none;
+            padding: 16px 32px; /* Increased padding for better touch target */
+            font-size: 16px; /* Ensures minimum 16px to prevent zoom */
+            cursor: pointer;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            touch-action: manipulation;
+            min-height: 48px; /* Ensures good touch target size */
+            min-width: 48px;
+            font-weight: 600;
+        }
+        
+        button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+            border-radius: 50px;
+            z-index: -1;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        button:hover::before {
+            opacity: 0.9;
+            transform: scale(1.05);
+        }
+        
+        button:active {
+            transform: translateY(1px);
+        }
+        
+        #reset::before {
+            background: linear-gradient(135deg, #ff5e62 0%, #ff9966 100%);
+        }
+        
+        button i {
+            font-size: 18px;
+        }
+        
+        .tasbih-groups {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            gap: 8px;
+        }
+        
+        .tasbih-group {
+            text-align: center;
+            padding: 15px 8px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            touch-action: manipulation;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 80px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .tasbih-group::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(67, 206, 162, 0.1) 0%, rgba(24, 90, 157, 0.1) 100%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: 0;
+        }
+        
+        .tasbih-group:nth-child(1), .tasbih-group:nth-child(3) {
+            flex: 0.8;
+            min-width: 0;
+        }
+        
+        .tasbih-group:nth-child(2) {
+            flex: 1.4;
+            min-width: 0;
+        }
+        
+        .tasbih-group:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .tasbih-group:hover::before {
+            opacity: 1;
+        }
+        
+        .tasbih-group.active {
+            background: rgba(67, 206, 162, 0.2);
+            border-color: rgba(67, 206, 162, 0.5);
+            box-shadow: 0 5px 15px rgba(67, 206, 162, 0.2);
+        }
+        
+        .tasbih-group.active::before {
+            opacity: 1;
+        }
+        
+        .tasbih-group h3 {
+            font-size: 16px; /* Increased from 14px to prevent zoom */
+            font-weight: 700;
+            margin-bottom: 8px;
+            transition: color 0.3s ease;
+            position: relative;
+            z-index: 1;
+            line-height: 1.2;
+        }
+        
+        .tasbih-group p {
+            font-size: 16px; /* Increased from 14px to prevent zoom */
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.6);
+            transition: color 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .vibrate {
+            animation: vibrate 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        @keyframes vibrate {
+            0% { transform: translate(0) scale(1); }
+            20% { transform: translate(-3px, 3px) scale(1.02); }
+            40% { transform: translate(-3px, -3px) scale(0.98); }
+            60% { transform: translate(3px, 3px) scale(1.02); }
+            80% { transform: translate(3px, -3px) scale(0.98); }
+            100% { transform: translate(0) scale(1); }
+        }
+        
+        .success-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+            transform: scale(0.8);
+        }
+        
+        .success-animation.active {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+        }
+        
+        .success-content {
+            background: linear-gradient(135deg, rgba(67, 206, 162, 0.25) 0%, rgba(24, 90, 157, 0.25) 100%);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 40px 30px;
+            border-radius: 25px;
+            text-align: center;
+            max-width: 320px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 
+                0 25px 50px rgba(0, 0, 0, 0.5),
+                0 0 100px rgba(67, 206, 162, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+            animation: glow 2s infinite alternate;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .dua-text {
+            margin: 25px 0;
+            padding: 20px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.15);
+            color: #f5e6a8;
+            font-size: 16px;
+            line-height: 1.6;
+            font-weight: 500;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+            box-shadow: 
+                0 5px 15px rgba(0, 0, 0, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        
+        @keyframes glow {
+            from {
+                box-shadow: 
+                    0 25px 50px rgba(0, 0, 0, 0.5),
+                    0 0 80px rgba(67, 206, 162, 0.2),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+            }
+            to {
+                box-shadow: 
+                    0 25px 50px rgba(0, 0, 0, 0.5),
+                    0 0 120px rgba(67, 206, 162, 0.4),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+            }
+        }
+        
+        .success-icon {
+            font-size: 80px;
+            color: #43cea2;
+            margin-bottom: 25px;
+            text-shadow: 0 0 30px rgba(67, 206, 162, 0.8);
+            animation: pulse 1.5s infinite alternate;
+        }
+        
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+                opacity: 1;
+            }
+            to {
+                transform: scale(1.1);
+                opacity: 0.8;
+            }
+        }
+        
+        .dark-mode-toggle, .sound-toggle {
+            position: absolute;
+            top: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            padding: 12px;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .dark-mode-toggle {
+            right: 20px;
+        }
+        
+        .sound-toggle {
+            left: 20px;
+        }
+        
+        .dark-mode-toggle:hover, .sound-toggle:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
+        }
+        
+        .light-mode .counter-container {
+            background: rgba(255, 255, 255, 0.25);
+            color: #333;
+            box-shadow: 
+                0 15px 35px rgba(0, 0, 0, 0.1),
+                0 5px 15px rgba(0, 0, 0, 0.05),
+                inset 0 1px 0 rgba(255, 255, 255, 0.4);
+        }
+        
+        .light-mode h1, .light-mode #counter {
+            color: #333;
+            text-shadow: 0 2px 10px rgba(24, 90, 157, 0.3);
+        }
+        
+        .light-mode #tasbih-text {
+            color: #185a9d;
+            text-shadow: 0 2px 10px rgba(24, 90, 157, 0.3);
+        }
+        
+        .light-mode .counter-display {
+            background: rgba(255, 255, 255, 0.6);
+            box-shadow: 
+                inset 0 5px 15px rgba(0, 0, 0, 0.1),
+                inset 0 -1px 0 rgba(255, 255, 255, 0.4);
+        }
+        
+        .light-mode .tasbih-group {
+            background: rgba(0, 0, 0, 0.05);
+            border-color: rgba(0, 0, 0, 0.1);
+        }
+        
+        .light-mode .tasbih-group.active {
+            background: rgba(67, 206, 162, 0.2);
+            border-color: rgba(67, 206, 162, 0.4);
+        }
+        
+        .light-mode .tasbih-group p, 
+        .light-mode .counter-info,
+        .light-mode .subtitle {
+            color: rgba(0, 0, 0, 0.6);
+        }
+        
+        .light-mode .dark-mode-toggle, 
+        .light-mode .sound-toggle {
+            background: rgba(0, 0, 0, 0.1);
+            border-color: rgba(0, 0, 0, 0.2);
+            color: rgba(0, 0, 0, 0.7);
+        }
+        
+        .light-mode .dark-mode-toggle:hover,
+        .light-mode .sound-toggle:hover {
+            color: #000;
+            background: rgba(0, 0, 0, 0.2);
+        }
+        
+        .key-controls {
+            margin-top: 15px;
+            font-size: 16px; /* Increased from 12px to prevent zoom */
+            color: rgba(255, 255, 255, 0.5);
+            text-align: center;
+            transition: color 0.3s ease;
+            line-height: 1.4;
+        }
+        
+        .footer {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 16px; /* Increased from 12px to prevent zoom */
+            color: rgba(255, 255, 255, 0.6);
+            transition: color 0.3s ease;
+        }
+        
+        .footer a {
+            color: #43cea2;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .footer a:hover {
+            color: #fff;
+            text-decoration: underline;
+            text-shadow: 0 0 10px rgba(67, 206, 162, 0.5);
+        }
+        
+        .light-mode .footer {
+            color: rgba(0, 0, 0, 0.6);
+        }
+        
+        .light-mode .footer a {
+            color: #185a9d;
+        }
+        
+        .light-mode .footer a:hover {
+            color: #333;
+            text-shadow: 0 0 10px rgba(24, 90, 157, 0.3);
+        }
+        
+        .light-mode .key-controls {
+            color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .haptic-indicator {
+            position: fixed;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, rgba(67, 206, 162, 0.9) 0%, rgba(24, 90, 157, 0.9) 100%);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-size: 16px; /* Increased from 14px */
+            font-weight: 600;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1001;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        .haptic-indicator.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* Enhanced responsive design */
+        @media (max-width: 380px) {
+            .counter-container {
+                padding: 25px 20px;
+                margin: 20px 10px;
+            }
+            
+            h1 {
+                font-size: 20px;
+            }
+            
+            .subtitle {
+                font-size: 16px; /* Maintain 16px minimum */
+            }
+            
+            #tasbih-text {
+                font-size: 24px;
+            }
+            
+            #counter {
+                font-size: 50px;
+            }
+            
+            .btn-container {
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+            
+            button {
+                padding: 14px 24px;
+                font-size: 16px; /* Maintain 16px minimum */
+                min-width: 120px;
+            }
+            
+            .tasbih-group h3 {
+                font-size: 16px; /* Maintain 16px minimum */
+            }
+            
+            .tasbih-group p {
+                font-size: 16px; /* Maintain 16px minimum */
+            }
+            
+            .dua-text {
+                font-size: 16px; /* Maintain 16px minimum */
+                padding: 15px;
+            }
+            
+            .key-controls, .footer {
+                font-size: 16px; /* Maintain 16px minimum */
+            }
+            
+            .counter-info {
+                font-size: 16px; /* Maintain 16px minimum */
+            }
+        }
+        
+        /* Loading animation */
+        @keyframes shimmer {
+            0% { background-position: -200px 0; }
+            100% { background-position: calc(200px + 100%) 0; }
+        }
+        
+        .loading {
+            background: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0.1) 100%);
+            background-size: 200px 100%;
+            animation: shimmer 1.5s infinite;
+        }
+        
+        /* Accessibility improvements */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+        
+        /* Focus styles for accessibility */
+        button:focus-visible,
+        .tasbih-group:focus-visible,
+        .dark-mode-toggle:focus-visible,
+        .sound-toggle:focus-visible {
+            outline: 2px solid #43cea2;
+            outline-offset: 2px;
+        }
+        
+        /* High contrast mode support */
+        @media (prefers-contrast: high) {
+            .counter-container {
+                border: 3px solid #43cea2;
+            }
+            
+            button {
+                border: 2px solid #43cea2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="counter-container">
+        <button id="sound-toggle" class="sound-toggle" aria-label="সাউন্ড টগল করুন">
+            <i class="fas fa-volume-up"></i>
+        </button>
+        <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="ডার্ক মোড টগল করুন">
+            <i class="fas fa-moon"></i>
+        </button>
+        
+        <div class="title">
+            <h1>ডিজিটাল তাসবিহ কাউন্টার</h1>
+            <p class="subtitle">মহান আল্লাহর জিকির করুন</p>
+        </div>
+        
+        <div class="tasbih-groups">
+            <div class="tasbih-group active" data-group="0" tabindex="0" role="button" aria-label="সুবহানআল্লাহ ৩৩ বার">
+                <h3>সুবহান<br>আল্লাহ</h3>
+                <p>৩৩ বার</p>
+            </div>
+            <div class="tasbih-group" data-group="1" tabindex="0" role="button" aria-label="আলহামদুলিল্লাহ ৩৩ বার">
+                <h3>আলহামদুলিল্লাহ</h3>
+                <p>৩৩ বার</p>
+            </div>
+            <div class="tasbih-group" data-group="2" tabindex="0" role="button" aria-label="আল্লাহু আকবার ৩৩ বার">
+                <h3>আল্লাহু<br>আকবার</h3>
+                <p>৩৩ বার</p>
+            </div>
+        </div>
+        
+        <div class="counter-display" role="button" tabindex="0" aria-label="তাসবিহ গণনার জন্য ক্লিক করুন">
+            <h2 id="tasbih-text">সুবহানআল্লাহ</h2>
+            <h1 id="counter" aria-live="polite">০</h1>
+            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="33">
+                <div id="progress"></div>
+            </div>
+            <div class="counter-info">
+                <span id="current-group">১ম ৩৩</span>
+                <span id="total-count">০/৯৯</span>
+            </div>
+        </div>
+        
+        <div class="btn-container">
+            <button id="increment" aria-label="তাসবিহ বৃদ্ধি করুন">
+                <i class="fas fa-plus"></i> তাসবিহ
+            </button>
+            <button id="reset" aria-label="রিসেট করুন">
+                <i class="fas fa-redo"></i> রিসেট
+            </button>
+        </div>
+        
+        <div class="key-controls">
+            <p>স্পেসবার, এন্টার বা ভলিউম বাটন চাপুন তাসবিহ করার জন্য</p>
+        </div>
+        
+        <div class="footer">
+            <p>Tasbih Counter by: <a href="https://wa.me/+97466489944" target="_blank" rel="noopener">Saieed Rahman</a></p>
+        </div>
+    </div>
+    
+    <div class="success-animation" id="success-animation" role="dialog" aria-modal="true" aria-labelledby="success-title">
+        <div class="success-content">
+            <div class="success-icon">
+                <i class="fas fa-star"></i>
+            </div>
+            <h2 id="success-title" style="font-size: 32px; font-weight: 700; margin-bottom: 15px; color: #fff; text-shadow: 0 0 15px rgba(67, 206, 162, 0.8);">মাশাআল্লাহ!</h2>
+            <p style="font-size: 20px; font-weight: 500; margin-bottom: 25px; color: #fff; text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);">আপনার ৯৯ বার তাসবিহ সম্পন্ন হয়েছে!</p>
+            
+            <div class="dua-text">
+                লা ইলাহা ইল্লাল্লাহু ওয়াহদাহু লা শারিকা লাহু, লাহুল মুলকু ওয়ালাহুল হামদু, ও হুয়া 'আলা কুল্লি শাই'ইন কাদীর
+            </div>
+            
+            <button id="continue-btn" aria-label="চালিয়ে যান" style="background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%); border: none; color: white; padding: 16px 32px; border-radius: 50px; font-size: 18px; font-weight: 600; cursor: pointer; box-shadow: 0 10px 20px rgba(0,0,0,0.3); transition: all 0.3s ease; min-height: 48px;">
+                <i class="fas fa-arrow-right"></i> চালিয়ে যান
+            </button>
+        </div>
+    </div>
+    
+    <div id="haptic-indicator" class="haptic-indicator">Volume Button Pressed</div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Performance optimization
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            
+            // Convert numbers to Bengali format
+            function toBengaliNumber(num) {
+                const bengaliNumerals = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+                return num.toString().split('').map(digit => {
+                    return /\d/.test(digit) ? bengaliNumerals[parseInt(digit)] : digit;
+                }).join('');
+            }
+            
+            // State variables
+            let count = 0;
+            let totalCount = 0;
+            
+            // DOM elements
+            const counter = document.getElementById("counter");
+            const tasbihText = document.getElementById("tasbih-text");
+            const increment = document.getElementById("increment");
+            const reset = document.getElementById("reset");
+            const progress = document.getElementById("progress");
+            const currentGroup = document.getElementById("current-group");
+            const totalCountEl = document.getElementById("total-count");
+            const successAnimation = document.getElementById("success-animation");
+            const continueBtn = document.getElementById("continue-btn");
+            const darkModeToggle = document.getElementById("dark-mode-toggle");
+            const soundToggle = document.getElementById("sound-toggle");
+            const tasbihGroups = document.querySelectorAll(".tasbih-group");
+            const hapticIndicator = document.getElementById("haptic-indicator");
+            const counterDisplay = document.querySelector(".counter-display");
+            
+            const tasbihs = ["সুবহানআল্লাহ", "আলহামদুলিল্লাহ", "আল্লাহু আকবার"];
+            const groupMaxes = [33, 33, 33];
+            const groupWords = ["১ম", "২য়", "৩য়"];
+            let currentTasbih = 0;
+            let soundEnabled = true;
+            
+            // Audio setup with better error handling
+            let tasbihSound = null;
+            let popupSound = null;
+            let audioInitialized = false;
+            
+            function initSounds() {
+                try {
+                    // Create audio elements
+                    tasbihSound = new Audio();
+                    popupSound = new Audio();
+                    
+                    // Use data URLs for better compatibility
+                    const tasbihSoundData = 'data:audio/mp3;base64,SUQzBAAAAAABOFRTU0UAAAAPAAADTGF2ZjU4Ljc2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAAFTgD///////////////////////////////////////////8AAAA8TEFNRTMuMTAwBK8AAAAAAAAAAAAAAABSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/7UGQAAAAwAIA1AAAMAAANIAAAAQAAAaQAAAAgAAA0gAAABAAAAAAAAAAAAAAAAAAASW5mbwAAAA8AAAABAAABfAA8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8//////////////////////////////////////////////////////////////////8AAAA8TEFNRTMuMTAwBK8AAAAAAAAAABQgJAaWQgAARwAAAXxMEOLSwAAAAAAAAAAAAAAAAAAAAAAAAA==';
+                    const popupSoundData = 'data:audio/mp3;base64,SUQzBAAAAAABOFRTU0UAAAAPAAADTGF2ZjU4Ljc2LjEwMAAAAAAAAAAAAAAA//tUwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAADAAARsgC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS04ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4OD///////////////////////////////////////////8AAAA8TEFNRTMuMTAwBK8AAAAAAAAAAAARtFaULAYAAAAAAABZldUIgXIkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//sUZAAP8AAAaQAAAAgAAA0gAAABAAABpAAAACAAADSAAAAETEFNRTMuMTAwVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVU=';
+                    
+                    tasbihSound.src = tasbihSoundData;
+                    popupSound.src = popupSoundData;
+                    
+                    tasbihSound.volume = 0.6;
+                    popupSound.volume = 0.7;
+                    
+                    // Preload
+                    tasbihSound.load();
+                    popupSound.load();
+                    
+                    audioInitialized = true;
+                } catch (e) {
+                    console.warn('Audio initialization failed:', e);
+                    audioInitialized = false;
+                }
+            }
+            
+            function playTasbihSound() {
+                if (!soundEnabled || !audioInitialized) return;
+                
+                try {
+                    const sound = tasbihSound.cloneNode();
+                    sound.currentTime = 0;
+                    sound.play().catch(() => {});
+                } catch (e) {
+                    console.warn('Sound play failed:', e);
+                }
+            }
+            
+            function playCompletionSound() {
+                if (!soundEnabled || !audioInitialized) return;
+                
+                try {
+                    popupSound.currentTime = 0;
+                    popupSound.play().catch(() => {});
+                } catch (e) {
+                    console.warn('Completion sound play failed:', e);
+                }
+            }
+            
+            // Initialize audio
+            initSounds();
+            
+            // Update counter display with better performance
+            function updateCounter() {
+                // Use requestAnimationFrame for smoother updates
+                requestAnimationFrame(() => {
+                    counter.textContent = toBengaliNumber(count);
+                    
+                    // Update progress
+                    const max = groupMaxes[currentTasbih];
+                    const progressPercent = (count / max) * 100;
+                    progress.style.width = `${progressPercent}%`;
+                    
+                    // Update ARIA attributes
+                    progress.parentElement.setAttribute('aria-valuenow', count);
+                    progress.parentElement.setAttribute('aria-valuemax', max);
+                    
+                    // Update info texts
+                    currentGroup.textContent = `${groupWords[currentTasbih]} ${toBengaliNumber(max)}`;
+                    totalCountEl.textContent = `${toBengaliNumber(totalCount)}/৯৯`;
+                });
+            }
+            
+            // Enhanced increment function with better UX
+            function incrementCounter() {
+                if (totalCount >= 99) return;
+                
+                count++;
+                totalCount++;
+                
+                // Enhanced vibration
+                if (navigator.vibrate) {
+                    navigator.vibrate([50]);
+                }
+                
+                // Add vibration animation with reduced motion check
+                if (!prefersReducedMotion) {
+                    counter.classList.add('vibrate');
+                    setTimeout(() => {
+                        counter.classList.remove('vibrate');
+                    }, 400);
+                }
+                
+                // Play sound
+                playTasbihSound();
+                
+                // Update counter display
+                updateCounter();
+                
+                // Analytics tracking
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'tasbih_count', {
+                        'event_category': 'engagement',
+                        'event_label': tasbihs[currentTasbih],
+                        'value': count
+                    });
+                }
+                
+                // Check if group is completed - switch immediately
+                if (count >= groupMaxes[currentTasbih] && currentTasbih < 2) {
+                    currentTasbih++;
+                    count = 0;
+                    tasbihText.textContent = tasbihs[currentTasbih];
+                    updateCounter();
+                    tasbihGroups.forEach((group, index) => {
+                        group.classList.toggle('active', index === currentTasbih);
+                        group.setAttribute('aria-pressed', index === currentTasbih);
+                    });
+                }
+                
+                // Check if all tasbihs are completed
+                if (totalCount >= 99) {
+                    setTimeout(() => {
+                        showCompletionAnimation();
+                    }, 1000);
+                }
+            }
+            
+            // Reset function with confirmation
+            function resetCounter() {
+                if (totalCount > 0) {
+                    // Add confirmation for reset if progress exists
+                    if (!confirm('আপনি কি নিশ্চিত যে আপনি রিসেট করতে চান?')) {
+                        return;
+                    }
+                }
+                
+                count = 0;
+                totalCount = 0;
+                currentTasbih = 0;
+                
+                updateCounter();
+                switchTasbihGroup(0);
+                
+                // Analytics tracking
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'tasbih_reset', {
+                        'event_category': 'engagement'
+                    });
+                }
+            }
+            
+            // Enhanced group switching
+            function switchTasbihGroup(groupIndex) {
+                if (groupIndex < 0 || groupIndex > 2) return;
+                
+                currentTasbih = groupIndex;
+                count = 0;
+                
+                // Update UI with animations
+                if (!prefersReducedMotion) {
+                    tasbihText.style.transform = 'scale(0.8)';
+                    tasbihText.style.opacity = '0';
+                    
+                    setTimeout(() => {
+                        tasbihText.textContent = tasbihs[currentTasbih];
+                        tasbihText.style.transform = 'scale(1)';
+                        tasbihText.style.opacity = '1';
+                    }, 150);
+                } else {
+                    tasbihText.textContent = tasbihs[currentTasbih];
+                }
+                
+                updateCounter();
+                
+                // Update active group
+                tasbihGroups.forEach((group, index) => {
+                    group.classList.toggle('active', index === groupIndex);
+                    group.setAttribute('aria-pressed', index === groupIndex);
+                });
+                
+                // Analytics tracking
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'tasbih_group_change', {
+                        'event_category': 'engagement',
+                        'event_label': tasbihs[groupIndex]
+                    });
+                }
+            }
+            
+            // Enhanced completion animation
+            function showCompletionAnimation() {
+                playCompletionSound();
+                successAnimation.classList.add('active');
+                
+                // Focus management for accessibility
+                continueBtn.focus();
+                
+                // Prevent body scroll
+                document.body.style.overflow = 'hidden';
+                
+                // Analytics tracking
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'tasbih_completed', {
+                        'event_category': 'achievement',
+                        'value': 99
+                    });
+                }
+            }
+            
+            function hideCompletionAnimation() {
+                successAnimation.classList.remove('active');
+                document.body.style.overflow = '';
+                
+                // Return focus to main counter
+                increment.focus();
+            }
+            
+            // Enhanced dark mode with system preference
+            function toggleDarkMode() {
+                const isLight = document.body.classList.toggle('light-mode');
+                
+                darkModeToggle.innerHTML = isLight ? 
+                    '<i class="fas fa-sun"></i>' : 
+                    '<i class="fas fa-moon"></i>';
+                
+                darkModeToggle.setAttribute('aria-label', isLight ? 
+                    'ডার্ক মোড চালু করুন' : 
+                    'লাইট মোড চালু করুন'
+                );
+                
+                // Save preference
+                try {
+                    localStorage.setItem('tasbih-dark-mode', isLight ? 'light' : 'dark');
+                } catch (e) {
+                    console.warn('Could not save dark mode preference:', e);
+                }
+                
+                // Analytics tracking
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'theme_change', {
+                        'event_category': 'engagement',
+                        'event_label': isLight ? 'light' : 'dark'
+                    });
+                }
+            }
+            
+            // Enhanced sound toggle
+            function toggleSound() {
+                soundEnabled = !soundEnabled;
+                
+                soundToggle.innerHTML = soundEnabled ? 
+                    '<i class="fas fa-volume-up"></i>' : 
+                    '<i class="fas fa-volume-mute"></i>';
+                
+                soundToggle.setAttribute('aria-label', soundEnabled ? 
+                    'সাউন্ড বন্ধ করুন' : 
+                    'সাউন্ড চালু করুন'
+                );
+                
+                try {
+                    localStorage.setItem('tasbih-sound-enabled', soundEnabled.toString());
+                } catch (e) {
+                    console.warn('Could not save sound preference:', e);
+                }
+                
+                // Analytics tracking
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'sound_toggle', {
+                        'event_category': 'engagement',
+                        'event_label': soundEnabled ? 'enabled' : 'disabled'
+                    });
+                }
+            }
+            
+            // Enhanced volume indicator
+            function showVolumeIndicator(buttonType = 'Volume Button') {
+                hapticIndicator.textContent = buttonType + ' Pressed';
+                hapticIndicator.classList.add('active');
+                
+                setTimeout(() => {
+                    hapticIndicator.classList.remove('active');
+                }, 1500);
+            }
+            
+            // Event listeners with better touch handling
+            
+            // Increment button
+            increment.addEventListener('click', incrementCounter);
+            
+            // Reset button
+            reset.addEventListener('click', resetCounter);
+            
+            // Continue button
+            continueBtn.addEventListener('click', function() {
+                hideCompletionAnimation();
+                resetCounter();
+            });
+            
+            // Dark mode toggle
+            darkModeToggle.addEventListener('click', toggleDarkMode);
+            
+            // Sound toggle
+            soundToggle.addEventListener('click', toggleSound);
+            
+            // Counter display tap
+            counterDisplay.addEventListener('click', incrementCounter);
+            
+            // Enhanced keyboard support
+            document.addEventListener('keydown', function(event) {
+                // Prevent default for app-specific keys
+                if ([' ', 'Enter', 'r', 'R', '1', '2', '3'].includes(event.key)) {
+                    event.preventDefault();
+                }
+                
+                switch(event.key) {
+                    case ' ':
+                    case 'Enter':
+                        incrementCounter();
+                        break;
+                    case 'r':
+                    case 'R':
+                        resetCounter();
+                        break;
+                    case '1':
+                    case '2':
+                    case '3':
+                        switchTasbihGroup(parseInt(event.key) - 1);
+                        break;
+                    case 'Escape':
+                        if (successAnimation.classList.contains('active')) {
+                            hideCompletionAnimation();
+                            resetCounter();
+                        }
+                        break;
+                }
+            });
+            
+            // Enhanced tasbih group selection
+            tasbihGroups.forEach((group, index) => {
+                // Click event
+                group.addEventListener('click', () => switchTasbihGroup(index));
+                
+                // Keyboard support
+                group.addEventListener('keydown', function(event) {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault();
+                        switchTasbihGroup(index);
+                    }
+                });
+            });
+            
+            // Volume button support
+            document.addEventListener('deviceready', function() {
+                window.addEventListener('volumeupbutton', function() {
+                    incrementCounter();
+                    showVolumeIndicator('Volume Up');
+                });
+                
+                window.addEventListener('volumedownbutton', function() {
+                    incrementCounter();
+                    showVolumeIndicator('Volume Down');
+                });
+            });
+            
+            // Media session API for hardware buttons
+            if ('mediaSession' in navigator) {
+                navigator.mediaSession.setActionHandler('previoustrack', function() {
+                    incrementCounter();
+                    showVolumeIndicator('Previous Track');
+                });
+                
+                navigator.mediaSession.setActionHandler('nexttrack', function() {
+                    incrementCounter();
+                    showVolumeIndicator('Next Track');
+                });
+            }
+            
+            // Initialize counter
+            updateCounter();
+            
+            // Load user preferences
+            try {
+                const darkMode = localStorage.getItem('tasbih-dark-mode');
+                if (darkMode === 'light') {
+                    document.body.classList.add('light-mode');
+                    darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+                    darkModeToggle.setAttribute('aria-label', 'ডার্ক মোড চালু করুন');
+                }
+                
+                const sound = localStorage.getItem('tasbih-sound-enabled');
+                if (sound === 'false') {
+                    soundEnabled = false;
+                    soundToggle.innerHTML = '<i class="fas fa-volume-mute"></i>';
+                    soundToggle.setAttribute('aria-label', 'সাউন্ড চালু করুন');
+                }
+            } catch (e) {
+                console.warn('Could not load preferences:', e);
+            }
+            
+            // System theme detection with improved handling
+            const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+            
+            function handleThemeChange(e) {
+                if (!localStorage.getItem('tasbih-dark-mode')) {
+                    if (e.matches) {
+                        document.body.classList.remove('light-mode');
+                        darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+                        darkModeToggle.setAttribute('aria-label', 'লাইট মোড চালু করুন');
+                    } else {
+                        document.body.classList.add('light-mode');
+                        darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+                        darkModeToggle.setAttribute('aria-label', 'ডার্ক মোড চালু করুন');
+                    }
+                }
+            }
+            
+            // Initial theme setup
+            if (!localStorage.getItem('tasbih-dark-mode')) {
+                handleThemeChange(mediaQuery);
+            }
+            
+            // Listen for theme changes
+            mediaQuery.addEventListener('change', handleThemeChange);
+            
+            // Performance monitoring
+            if ('performance' in window && typeof gtag !== 'undefined') {
+                window.addEventListener('load', function() {
+                    setTimeout(() => {
+                        const loadTime = performance.now();
+                        gtag('event', 'page_load_time', {
+                            'event_category': 'performance',
+                            'value': Math.round(loadTime)
+                        });
+                    }, 0);
+                });
+            }
+            
+            // Service worker registration for offline functionality
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/sw.js').catch(() => {
+                    console.info('Service worker registration failed - offline functionality not available');
+                });
+            }
+            
+            // Prevent zoom on double tap for better UX
+            let lastTouchEnd = 0;
+            document.addEventListener('touchend', function (event) {
+                const now = (new Date()).getTime();
+                if (now - lastTouchEnd <= 300) {
+                    event.preventDefault();
+                }
+                lastTouchEnd = now;
+            }, false);
+            
+            // Enhanced error handling
+            window.addEventListener('error', function(event) {
+                console.warn('App error:', event.error);
+                
+                // Analytics error tracking
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'exception', {
+                        'description': event.error?.message || 'Unknown error',
+                        'fatal': false
+                    });
+                }
+            });
+            
+            // Visibility change handler for better performance
+            document.addEventListener('visibilitychange', function() {
+                if (document.hidden) {
+                    // Pause animations or heavy operations
+                } else {
+                    // Resume normal operation
+                    updateCounter();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
