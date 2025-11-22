@@ -414,7 +414,7 @@
             --primary-color: #43cea2;
             --secondary-color: #185a9d;
             --bg-dark: linear-gradient(135deg, #1a1f35 0%, #121624 100%);
-            --bg-light: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 50%, #80deea 100%);
+            --bg-light: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             --text-dark: #fff;
             --text-light: #333;
             --accent-gradient: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
@@ -590,6 +590,10 @@
             overflow: hidden;
             transition: background 0.3s ease;
             position: relative;
+        }
+        
+        .light-mode .progress-bar {
+            background: rgba(0, 0, 0, 0.2);
         }
         
         #progress {
@@ -897,68 +901,58 @@
         }
         
         .light-mode .counter-container {
-            background: rgba(255, 255, 255, 0.65);
-            color: #1a1a2e;
+            background: rgba(255, 255, 255, 0.25);
+            color: #333;
             box-shadow: 
-                0 20px 60px rgba(67, 206, 162, 0.15),
-                0 8px 25px rgba(24, 90, 157, 0.1),
-                inset 0 1px 0 rgba(255, 255, 255, 0.8),
-                0 0 0 1px rgba(67, 206, 162, 0.1);
+                0 15px 35px rgba(0, 0, 0, 0.1),
+                0 5px 15px rgba(0, 0, 0, 0.05),
+                inset 0 1px 0 rgba(255, 255, 255, 0.4);
         }
         
         .light-mode h1, .light-mode #counter {
-            color: #1a1a2e;
-            text-shadow: 0 2px 20px rgba(67, 206, 162, 0.4);
+            color: #333;
+            text-shadow: 0 2px 10px rgba(24, 90, 157, 0.3);
         }
         
         .light-mode #tasbih-text {
-            color: #0d7377;
-            text-shadow: 0 3px 15px rgba(13, 115, 119, 0.3);
-            font-weight: 700;
+            color: #185a9d;
+            text-shadow: 0 2px 10px rgba(24, 90, 157, 0.3);
         }
         
         .light-mode .counter-display {
-            background: linear-gradient(145deg, rgba(255, 255, 255, 0.9) 0%, rgba(224, 247, 250, 0.8) 100%);
+            background: rgba(255, 255, 255, 0.6);
             box-shadow: 
-                0 8px 32px rgba(67, 206, 162, 0.2),
-                inset 0 2px 8px rgba(255, 255, 255, 0.9),
-                inset 0 -2px 8px rgba(67, 206, 162, 0.1);
-            border: 1px solid rgba(67, 206, 162, 0.2);
+                inset 0 5px 15px rgba(0, 0, 0, 0.1),
+                inset 0 -1px 0 rgba(255, 255, 255, 0.4);
         }
         
         .light-mode .tasbih-group {
-            background: linear-gradient(145deg, rgba(255, 255, 255, 0.8) 0%, rgba(224, 247, 250, 0.6) 100%);
-            border: 1px solid rgba(67, 206, 162, 0.25);
-            box-shadow: 0 4px 15px rgba(67, 206, 162, 0.1);
+            background: rgba(0, 0, 0, 0.05);
+            border-color: rgba(0, 0, 0, 0.1);
         }
         
         .light-mode .tasbih-group.active {
-            background: linear-gradient(145deg, rgba(67, 206, 162, 0.35) 0%, rgba(128, 222, 234, 0.25) 100%);
-            border: 2px solid rgba(67, 206, 162, 0.6);
-            box-shadow: 0 6px 25px rgba(67, 206, 162, 0.3);
+            background: rgba(67, 206, 162, 0.2);
+            border-color: rgba(67, 206, 162, 0.4);
         }
         
         .light-mode .tasbih-group p, 
         .light-mode .counter-info,
         .light-mode .subtitle {
-            color: rgba(26, 26, 46, 0.75);
-            font-weight: 500;
+            color: rgba(0, 0, 0, 0.6);
         }
         
         .light-mode .dark-mode-toggle, 
         .light-mode .sound-toggle {
-            background: linear-gradient(145deg, rgba(255, 255, 255, 0.9) 0%, rgba(224, 247, 250, 0.7) 100%);
-            border: 1px solid rgba(67, 206, 162, 0.3);
-            color: #0d7377;
-            box-shadow: 0 4px 15px rgba(67, 206, 162, 0.15);
+            background: rgba(0, 0, 0, 0.1);
+            border-color: rgba(0, 0, 0, 0.2);
+            color: rgba(0, 0, 0, 0.7);
         }
         
         .light-mode .dark-mode-toggle:hover,
         .light-mode .sound-toggle:hover {
-            color: #185a9d;
-            background: linear-gradient(145deg, rgba(67, 206, 162, 0.2) 0%, rgba(128, 222, 234, 0.25) 100%);
-            border-color: rgba(67, 206, 162, 0.5);
-            box-shadow: 0 6px 25px rgba(67, 206, 162, 0.25);
+            color: #000;
+            background: rgba(0, 0, 0, 0.2);
         }
         
         .key-controls {
@@ -992,21 +986,20 @@
         }
         
         .light-mode .footer {
-            color: rgba(26, 26, 46, 0.7);
+            color: rgba(0, 0, 0, 0.6);
         }
         
         .light-mode .footer a {
-            color: #0d7377;
-            font-weight: 700;
+            color: #185a9d;
         }
         
         .light-mode .footer a:hover {
-            color: #185a9d;
-            text-shadow: 0 0 15px rgba(67, 206, 162, 0.5);
+            color: #333;
+            text-shadow: 0 0 10px rgba(24, 90, 157, 0.3);
         }
         
         .light-mode .key-controls {
-            color: rgba(26, 26, 46, 0.6);
+            color: rgba(0, 0, 0, 0.5);
         }
         
         .haptic-indicator {
@@ -1227,6 +1220,8 @@
             // State variables
             let count = 0;
             let totalCount = 0;
+            let isAnimating = false;
+            let animationTimeout = null;
             
             // DOM elements
             const counter = document.getElementById("counter");
@@ -1261,11 +1256,9 @@
                     tasbihSound = new Audio();
                     popupSound = new Audio();
                     
-                    // Use data URLs for better compatibility
-                    const tasbihSoundData = 'data:audio/mp3;base64,SUQzBAAAAAABOFRTU0UAAAAPAAADTGF2ZjU4Ljc2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAAFTgD///////////////////////////////////////////8AAAA8TEFNRTMuMTAwBK8AAAAAAAAAAAAAAABSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/7UGQAAAAwAIA1AAAMAAANIAAAAQAAAaQAAAAgAAA0gAAABAAAAAAAAAAAAAAAAAAASW5mbwAAAA8AAAABAAABfAA8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8//////////////////////////////////////////////////////////////////8AAAA8TEFNRTMuMTAwBK8AAAAAAAAAABQgJAaWQgAARwAAAXxMEOLSwAAAAAAAAAAAAAAAAAAAAAAAAA==';
+                    // Use local MP3 files
+                    tasbihSound.src = 'assets/sounds/tasbih.mp3';
                     const popupSoundData = 'data:audio/mp3;base64,SUQzBAAAAAABOFRTU0UAAAAPAAADTGF2ZjU4Ljc2LjEwMAAAAAAAAAAAAAAA//tUwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAADAAARsgC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS04ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4OD///////////////////////////////////////////8AAAA8TEFNRTMuMTAwBK8AAAAAAAAAAAARtFaULAYAAAAAAABZldUIgXIkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//sUZAAP8AAAaQAAAAgAAA0gAAABAAABpAAAACAAADSAAAAETEFNRTMuMTAwVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVU=';
-                    
-                    tasbihSound.src = tasbihSoundData;
                     popupSound.src = popupSoundData;
                     
                     tasbihSound.volume = 0.6;
@@ -1329,24 +1322,32 @@
                 });
             }
             
-            // Enhanced increment function with better UX
+            // Optimized increment function for mobile performance
             function incrementCounter() {
                 if (totalCount >= 99) return;
                 
                 count++;
                 totalCount++;
                 
-                // Enhanced vibration
+                // Optimized vibration - lighter haptic feedback
                 if (navigator.vibrate) {
-                    navigator.vibrate([50]);
+                    navigator.vibrate(30);
                 }
                 
-                // Add vibration animation with reduced motion check
-                if (!prefersReducedMotion) {
+                // Optimized animation - prevent stacking
+                if (!prefersReducedMotion && !isAnimating) {
+                    isAnimating = true;
                     counter.classList.add('vibrate');
-                    setTimeout(() => {
+                    
+                    // Clear any existing timeout
+                    if (animationTimeout) {
+                        clearTimeout(animationTimeout);
+                    }
+                    
+                    animationTimeout = setTimeout(() => {
                         counter.classList.remove('vibrate');
-                    }, 400);
+                        isAnimating = false;
+                    }, 200);
                 }
                 
                 // Play sound
@@ -1355,8 +1356,8 @@
                 // Update counter display
                 updateCounter();
                 
-                // Analytics tracking
-                if (typeof gtag !== 'undefined') {
+                // Throttled analytics tracking - only track every 10th count
+                if (typeof gtag !== 'undefined' && count % 10 === 0) {
                     gtag('event', 'tasbih_count', {
                         'event_category': 'engagement',
                         'event_label': tasbihs[currentTasbih],
@@ -1396,6 +1397,14 @@
                 count = 0;
                 totalCount = 0;
                 currentTasbih = 0;
+                
+                // Clear animation state
+                if (animationTimeout) {
+                    clearTimeout(animationTimeout);
+                    animationTimeout = null;
+                }
+                isAnimating = false;
+                counter.classList.remove('vibrate');
                 
                 updateCounter();
                 switchTasbihGroup(0);
@@ -1673,9 +1682,12 @@
                 }
             }
             
-            // Initial theme setup
+            // Initial theme setup - default to dark mode
             if (!localStorage.getItem('tasbih-dark-mode')) {
-                handleThemeChange(mediaQuery);
+                // Set dark mode as default instead of system preference
+                document.body.classList.remove('light-mode');
+                darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+                darkModeToggle.setAttribute('aria-label', 'লাইট মোড চালু করুন');
             }
             
             // Listen for theme changes
